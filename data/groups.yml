@@ -1,0 +1,11 @@
+---
+example:
+  id: 1001
+  users:
+  - example
+  link_groups: null
+example2:
+  id: 1002
+  users:
+  - example2
+  link_groups: null
