@@ -1,0 +1,16 @@
+---
+version: '2'
+services:
+  stnsclient:
+    build: .
+    environment:
+      - DOCKER_COMPOSE=true
+    links:
+      - stnsserver
+  stnsserver:
+    command: stns -verbose -logfile /dev/stdout
+    ports:
+      - "1104:1104"
+    image: stns/stns
+    volumes:
+      - ./conf/stns.conf:/etc/stns/stns.conf

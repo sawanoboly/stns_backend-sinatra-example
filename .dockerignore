@@ -1,5 +1,9 @@
 vendor/*
 bin/*
 .bundle/*
+.git/*
 volumes/*
 tmp/*
+.envrc
+.rvmrc
+STNS/*
